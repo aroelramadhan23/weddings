@@ -238,6 +238,7 @@ body {
 .timeline li .timeline-panel {
   text-align: center;
   float: left;
+  margin-left: -10px;
   width: 40%;
   padding: 20px;
   background: var(--more-color);
@@ -269,6 +270,7 @@ body {
 }
 .timeline li.timeline-inverted .timeline-panel {
   float: right;
+  margin-right: -10px;
 }
 .timeline li.timeline-inverted .timeline-panel::before {
   border-left-width: 0;
@@ -312,6 +314,10 @@ body {
 .rspv button:hover {
   background-color: var(--more-color);
   color: var(--primary-color);
+}
+.disqus-wrapper {
+  width: 100%;
+  overflow-x: hidden;
 }
 /* GIFTS */
 .gift {
@@ -358,7 +364,7 @@ footer a {
   height: 4rem;
   font-size: 4rem;
   position: fixed;
-  top: 6rem;
+  top: 7rem;
   right: 2rem;
   cursor: pointer;
   color: #eee;
@@ -431,6 +437,16 @@ footer a {
   html {
     font-size: 70%;
   }
+  body {
+    overflow-x: hidden;
+  }
+  .home,
+  .info,
+  .story,
+  .rspv,
+  .gift {
+    max-height: 100vh;
+  }
   .simply-countdown-circle > .simply-section {
     padding: 20px;
     width: 60px;
@@ -439,13 +455,31 @@ footer a {
   .home .couple img {
     width: 90%;
   }
+  .timeline h3 {
+    font-size: 1.2rem;
+  }
+  .timeline span {
+    font-size: 0.7rem;
+  }
+  .timeline p {
+    font-size: 0.9rem;
+  }
   .timeline li .timeline-panel {
-    font-size: 50%;
+    padding: 10px;
+    margin-left: -25px;
+  }
+  .timeline li.timeline-inverted .timeline-panel {
+    float: right;
+    margin-right: -25px;
   }
   .rspv button {
-    margin-top: 5px;
-    transform: translateX(250px);
+    margin-top: -25px;
+    transform: translateX(320px);
     font-size: 1.5rem;
+  }
+  .disqus-wrapper {
+    transform: scale(0.6);
+    transform-origin: top center;
   }
   .gift ul {
     margin-top: 5px;
@@ -455,6 +489,3 @@ footer a {
     font-size: 2rem;
   }
 }
-
-
-
