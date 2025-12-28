@@ -439,6 +439,9 @@ footer a {
   .home .couple img {
     width: 90%;
   }
+  .timeline li .timeline-panel {
+    font-size: 50%;
+  }
   .rspv button {
     margin-top: 5px;
     transform: translateX(250px);
@@ -452,5 +455,6 @@ footer a {
     font-size: 2rem;
   }
 }
+
 
 
