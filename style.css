@@ -21,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-1.jpg);
+  background-image: url(img/bg-1.png);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -450,3 +450,4 @@ footer a {
     font-size: 2rem;
   }
 }
+
