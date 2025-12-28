@@ -69,6 +69,8 @@
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
+          data-bs-backdrop="true"
+          data-bs-scroll="false"
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
@@ -93,6 +95,7 @@
         </div>
       </div>
     </nav>
+    <!-- Offcanvas diluar navbar -->
 
     <!-- Home -->
     <section id="home" class="home">
@@ -355,7 +358,7 @@
       </form>
       <div class="row justify-content-center mt-5">
         <div class="col-md-6 col-10">
-          <div id="disqus_thread"></div>
+          <div id="disqus_thread" class="disqus-wrapper"></div>
           <script>
             /**
              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
