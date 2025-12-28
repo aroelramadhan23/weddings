@@ -433,6 +433,8 @@ footer a {
   }
   .simply-countdown-circle > .simply-section {
     padding: 20px;
+    width: 60px;
+    height: 60px;
   }
   .home .couple img {
     width: 90%;
@@ -450,4 +452,5 @@ footer a {
     font-size: 2rem;
   }
 }
+
 
