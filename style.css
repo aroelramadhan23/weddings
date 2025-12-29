@@ -151,9 +151,14 @@ body {
   font-weight: bold;
 }
 .info .alamat {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+}
+.info .btn {
+  margin-top: 1rem;
+  font-size: 2rem;
 }
 .info .description {
+  margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: 300;
 }
@@ -239,7 +244,7 @@ body {
   text-align: center;
   float: left;
   margin-left: -10px;
-  width: 40%;
+  width: 50%;
   padding: 20px;
   background: var(--more-color);
   border: 1px solid #eee;
@@ -286,14 +291,14 @@ body {
 }
 
 /* RSPV */
-.rspv {
+/* .rspv {
   min-height: 100vh;
   background-color: var(--bg-color);
   color: var(--more-color);
   padding-top: 8rem;
   padding-bottom: 6rem;
-}
-.rspv h2 {
+  }
+  .rspv h2 {
   color: var(--primary-color);
   font-family: "sacramento", cursive;
   font-size: 5rem;
@@ -310,14 +315,59 @@ body {
   padding: 5px 10px;
   font-weight: 500;
   font-size: 1rem;
+  }
+  .rspv button:hover {
+    background-color: var(--more-color);
+    color: var(--primary-color);
+    } */
+.rsvp {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--more-color);
+  padding-top: 8rem;
+  padding-bottom: 6rem;
 }
-.rspv button:hover {
-  background-color: var(--more-color);
+
+.rsvp h2 {
   color: var(--primary-color);
+  font-family: "sacramento", cursive;
+  font-size: 5rem;
+  font-weight: bold;
 }
-.disqus-wrapper {
-  width: 100%;
-  overflow-x: hidden;
+.rsvp-form {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  gap: 10px;
+}
+
+.rsvp-form textarea,
+.rsvp-form button {
+  grid-column: span 3;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.rsvp-form button {
+  background: var(--secondary-color);
+  color: var(--more-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* Card hasil RSVP */
+.rsvp-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: white;
+  color: var(--secondary-color);
 }
 /* GIFTS */
 .gift {
@@ -455,6 +505,20 @@ footer a {
   .home .couple img {
     width: 90%;
   }
+  .info h2 {
+    font-size: 4.5rem;
+  }
+  .info .alamat,
+  .info p,
+  .info .card,
+  .info .card-footer,
+  .info .card-body,
+  .info .card-header {
+    font-size: 1.2rem;
+  }
+  .info .btn {
+    font-size: 1.3rem;
+  }
   .timeline h3 {
     font-size: 1.2rem;
   }
@@ -465,27 +529,38 @@ footer a {
     font-size: 0.9rem;
   }
   .timeline li .timeline-panel {
-    padding: 10px;
-    margin-left: -25px;
+    padding: 5px;
+    margin-left: -45px;
   }
   .timeline li.timeline-inverted .timeline-panel {
     float: right;
-    margin-right: -25px;
+    margin-right: -45px;
   }
-  .rspv button {
-    margin-top: -25px;
-    transform: translateX(320px);
-    font-size: 1.5rem;
+  .rsvp h2 {
+    font-size: 3rem;
   }
-  .disqus-wrapper {
-    transform: scale(0.6);
-    transform-origin: top center;
+  .rsvp-form {
+    grid-template-columns: 1fr;
+  }
+
+  .rsvp-form textarea,
+  .rsvp-form button {
+    grid-column: span 1;
+  }
+  /* .rspv .disqus-wrapper {
+    transform: scale(0.7) translateY(-200px);
+  } */
+  .gift h2 {
+    font-size: 3.5rem;
   }
   .gift ul {
     margin-top: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .gift ul span {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  footer {
+    margin-top: 8rem;
   }
 }
